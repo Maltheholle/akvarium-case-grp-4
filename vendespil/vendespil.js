@@ -65,3 +65,25 @@ const game = document.getElementById('game');
 const grid = document.createElement('section');
 grid.setAttribute('class', 'grid');
 game.appendChild(grid);
+
+// Opretter grundstruktur for fiske vendespil//
+// Retter størrelse og visning af billeder på kortene//
+gameGrid.forEach(function (item) {
+  const name = item.name;
+  const img = item.img;
+
+  const card = document.createElement('div');
+  card.classList.add('card');
+  card.dataset.name = name;
+
+  const front = document.createElement('div');
+  front.classList.add('front');
+
+  const back = document.createElement('div');
+  back.classList.add('back');
+  back.style.backgroundImage = 'url(' + img + ')';
+
+  grid.appendChild(card);
+  card.appendChild(front);
+  card.appendChild(back);
+});
