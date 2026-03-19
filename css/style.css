@@ -393,3 +393,60 @@ animation: blink-title ease-in-out 2.6s infinite;
 
  animation: move-blob-left-and-right 13s ease-in-out infinite;
 }
+
+
+
+/* Laver bevægelsen med start og slut punkter til .blob*/
+
+@keyframes move-blob-left-and-right {
+    
+
+    0% {
+        left: 80%;  
+        transform: scaleX(1);
+        
+    }
+
+    15% {
+        transform: scaleX(1) translateY(-20px); 
+
+    }
+
+    30% {
+        transform: scaleX(1) translateY(30px);
+
+    }
+
+    45% {
+
+        transform: scaleX(1); 
+
+        
+    }
+    50% {
+        left: 20%;
+    transform: scaleX(1);
+    }
+        
+    
+
+    65% {
+        transform: scaleX(-1) translateY(-10px);
+    
+    }
+
+    75% {
+        transform: scaleX(-1) translateY(20px);
+    }
+
+    95% {
+        
+
+        transform: scaleX(-1); 
+    }
+    100% {
+        left: 80%;             
+        transform: scaleX(1); 
+    }
+}
+
