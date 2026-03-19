@@ -139,3 +139,14 @@ span {
     z-index: 999;
   
 }
+/*Taleboble pil */
+.kallekrabbe-boble::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 30px;
+
+    border-width: 10px 10px 0 10px;
+    border-style: solid;
+    border-color: #7fd3ff transparent transparent transparent;
+}
