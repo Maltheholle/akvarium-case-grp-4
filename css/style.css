@@ -41,3 +41,12 @@ word-spacing: -6px;
     height: 250px;
 
 }
+
+.bubbles-small-1 {
+    position: absolute;
+    bottom: 400px;
+    left: 30%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: auto;
+}
