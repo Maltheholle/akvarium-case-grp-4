@@ -538,3 +538,97 @@ animation: blink-title ease-in-out 2.6s infinite;
     }
 }
 
+/* Containeren der holder dem ved siden af hinanden */
+.aquarium-popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 80vw; /* Gør den bredere så den ligner billedet */
+    max-width: 1100px;
+    pointer-events: auto;
+    transform: translate(-50%, -50%);
+}
+.blue-bubble {
+    background-color: #8cd3f5; /* Den lyseblå farve fra dit billede */
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    flex: 1;   
+}
+
+/*Natasja Commit*/
+.blue-bubble h2 {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+    color:#000;
+    font-family: "cherry bomb one";
+}
+
+
+.blue-bubble p {
+    color: #000;
+    background-color: lightblue;
+    font-family: "Cherry bomb one"; /* Eller en lignende "rund" font */
+    font-size: 1.6rem;
+    font-weight: regular;
+    line-height: 1.5;
+    margin: 0;
+    border-radius: 10px; 
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: blue;
+}
+
+.blue-bubble,
+.tooltip {
+    width: 420px;
+    max-width: 90vw;
+    padding: 20px;
+    border-radius: 12px;
+}
+/*Natasja Commit slut*/
+
+
+/* EMILIE COMMIT STARTER HER */
+.tooltip {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: none;
+   color: #fff;
+   border-radius: 16px;
+   font-size: 40px;
+   line-height: 1.5;
+   
+   
+   opacity: 0;
+   transition: opacity 0.25s ease;
+   pointer-events: none;
+   z-index: 9999;
+   display: none;
+   font-family: "Cherry-Bomb-One";
+}
+
+.tooltip img {
+    max-width: 500px; /* Juster størrelsen på fisken i kortet her */
+    height: auto;
+}
+
+.tooltip.is-visible {
+   opacity: 1;
+}
+/* EMILIE COMMIT STOPPER HER */
+
+/*Natasja Commit*/
+.paused {
+    animation-play-state: paused !important;
+}
