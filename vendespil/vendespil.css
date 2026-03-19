@@ -85,3 +85,7 @@ span {
 .front:hover {
     border: 2px solid rgb(180, 0, 0);
 }
+/*Flip effekt */
+.back {
+    transform: rotateY(180deg);
+}
