@@ -467,3 +467,23 @@ animation: blink-title ease-in-out 2.6s infinite;
 
     animation: make-crab-jump 7s ease-in-out infinite;
 }
+
+
+@keyframes make-crab-jump {
+    
+    0% { 
+        transform: translateY(0);
+    }
+
+    5% {
+        transform: translateY(-40px);
+    }
+
+    10%{
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
