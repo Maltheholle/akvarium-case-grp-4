@@ -1,0 +1,6 @@
+/*Opretter grundstruktur for fiske vendespil */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
