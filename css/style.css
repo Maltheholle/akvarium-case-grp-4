@@ -636,3 +636,12 @@ animation: blink-title ease-in-out 2.6s infinite;
 .paused {
     animation-play-state: paused;
 }
+
+.active-fish {
+    position: fixed;
+    top: 180px;
+    left: 220px;
+    width: 260px;
+    transform: none;
+    z-index: 1000;
+}

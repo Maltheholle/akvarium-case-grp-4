@@ -36,6 +36,7 @@ function closeTooltip() {
 
    if (activeFish) {
       activeFish.classList.remove("paused");
+      activeFish.classList.remove("active-fish");
       activeFish = null;
    }
 }
@@ -51,26 +52,26 @@ function showTooltip(html) {
 fishInfo.forEach((fish) => {
    document.querySelectorAll("." + fish.className).forEach((elem) => {
       elem.addEventListener("click", () => {
-         const imageSrc = elem.getAttribute("src");
          const [title, ...rest] = fish.info.split(".");
          const description = rest.join(".");
 
-         if (activeFish) {
-            activeFish.classList.remove("paused");
+        if (activeFish) {
+         activeFish.classList.remove("paused");
+         activeFish.classList.remove("active-fish");
          }
 
          activeFish = elem;
          elem.classList.add("paused");
+         elem.classList.add("active-fish");
 
          const fishDetails = `
-            <div class="aquarium-popup">
-               <img src="${imageSrc}" class="popup-fish-img">
-               <div class="blue-bubble">
-                  <div class="close-icon">×</div>
-                  <h2>${title}</h2>
-                  <p>${description}</p>
-               </div>
-            </div>
+         <div class="aquarium-popup">
+         <div class="blue-bubble">
+         <div class="close-icon">×</div>
+         <h2>${title}</h2>
+         <p>${description}</p>
+         </div>
+         </div>
          `;
 
          showTooltip(fishDetails);
