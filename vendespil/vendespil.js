@@ -208,3 +208,9 @@ window.onload = function () {
     boble.textContent = 'Pas på der ikke går fisk i den!';
   });
 };
+
+const lukKnap = document.getElementById('lukKnap');
+
+lukKnap.addEventListener('click', function () {
+  window.location.href = '../index.html'; // skift til forside
+});
