@@ -50,3 +50,21 @@ word-spacing: -6px;
     width: 100px;
     height: auto;
 }
+
+.bubbles-small-2 {
+    position: absolute;
+    bottom: 550px;
+    left: 10%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: auto;
+}
+
+.bubbles-small-3 {
+    position: absolute;
+    bottom: 400px;
+    left: 85%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: auto;
+}
