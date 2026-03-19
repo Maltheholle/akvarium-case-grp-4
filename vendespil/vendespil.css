@@ -97,3 +97,10 @@ span {
 .match .front {
     opacity: 0.0 !important;
 }
+/*Bagside styling */
+.back {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+}
