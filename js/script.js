@@ -83,3 +83,39 @@ const fishDetails = `
 
       });
    });
+ // Hent DOM Elementer 
+const getBlob = document.getElementsByClassName("blob");
+const getDory = document.getElementsByClassName("dory");
+const getNemo = document.getElementsByClassName("nemo");
+const getPalle = document.getElementsByClassName("palle");
+
+const soundBlob = new Audio("audio/blob.m4a");
+const soundNemo = new Audio("audio/nemo.m4a");
+const soundDory = new Audio("audio/dory.m4a");
+const soundPalle = new Audio("audio/palle.m4a");
+
+document.querySelectorAll(".blob").forEach((elem) => {
+   elem.addEventListener("click", () => {
+      soundBlob.play();
+   });
+});
+
+document.querySelectorAll(".nemo").forEach((elem) => {
+   elem.addEventListener("click", () => {
+      soundNemo.play();
+   });
+});
+
+document.querySelectorAll(".dory").forEach((elem) => {
+   elem.addEventListener("click", () => {
+      soundDory.play();
+   });
+});
+
+document.querySelectorAll(".palle").forEach((elem) => {
+   elem.addEventListener("click", () => {
+      soundPalle.play();
+   });
+});
+
+
