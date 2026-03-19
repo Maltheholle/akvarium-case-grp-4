@@ -25,61 +25,64 @@ const fishInfo = [
 
 
 
- // finder tooltip id og gemmer det i en variabel
-   const tooltip = document.getElementById("tooltip");
+const tooltip = document.getElementById("tooltip");
+let activeFish = null;
 
-// Funktion der viser tooltip med biloplysninger
-   // Parameter: html = den tekst indeholdende html-tags som vi vil vise i tooltip'en
-   function showTooltip(html) {
-      // Tjekker om tooltip-elementet eksisterer i DOM'en
-      if (tooltip) {
-         // Indsætter teksten i tooltip'en
-         tooltip.innerHTML = html;
-         // Gør tooltip'en synlig med css klassen
-         tooltip.classList.add("is-visible");
-         tooltip.style.display = "block";
-
-         // Sætter en timer til at skjule tooltip'en efter 8 sekunder
-         setTimeout( function() {
-            // Fjerner css klassen så tooltip'en skjules igen
-            tooltip.classList.remove("is-visible");
-         },8000);
-      }
+function closeTooltip() {
+   if (tooltip) {
+      tooltip.classList.remove("is-visible");
+      tooltip.style.display = "none";
    }
 
-// Gennemløber info i array
-   fishInfo.forEach((fish) => {
-      // Finder alle HTML-elementer med den aktuelle bils className
-      document.querySelectorAll("." + fish.className).forEach((elem) => {
-            // Tilføjer mouseover event listener til hvert element
-            elem.addEventListener("click", () => {
-               // Opretter HTML-strengen med bilens detaljer
-               const imageSrc = elem.getAttribute("src");
+   if (activeFish) {
+      activeFish.classList.remove("paused");
+      activeFish = null;
+   }
+}
 
+function showTooltip(html) {
+   if (tooltip) {
+      tooltip.innerHTML = html;
+      tooltip.classList.add("is-visible");
+      tooltip.style.display = "block";
+   }
+}
 
-const [title, ...rest] = fish.info.split(".");
-const description = rest.join(".");
+fishInfo.forEach((fish) => {
+   document.querySelectorAll("." + fish.className).forEach((elem) => {
+      elem.addEventListener("click", () => {
+         const imageSrc = elem.getAttribute("src");
+         const [title, ...rest] = fish.info.split(".");
+         const description = rest.join(".");
 
-const fishDetails = `
-    <div class="aquarium-popup">
-        <img src="${imageSrc}" class="popup-fish-img">
-        
-        <div class="blue-bubble">
-            <div class="close-icon" onclick="document.getElementById('tooltip').style.display='none'">×</div>
-            
-            <h2>${title}</h2>
-            <p>${description}</p>
-        </div>
-    </div>
-`;
+         if (activeFish) {
+            activeFish.classList.remove("paused");
+         }
 
-               // Kalder showTooltip funktionen med bilens detaljer
-               showTooltip(fishDetails);
-               elem.classList.toggle("paused")
-            });
+         activeFish = elem;
+         elem.classList.add("paused");
 
+         const fishDetails = `
+            <div class="aquarium-popup">
+               <img src="${imageSrc}" class="popup-fish-img">
+               <div class="blue-bubble">
+                  <div class="close-icon">×</div>
+                  <h2>${title}</h2>
+                  <p>${description}</p>
+               </div>
+            </div>
+         `;
+
+         showTooltip(fishDetails);
+
+         document.querySelector(".close-icon").addEventListener("click", closeTooltip);
       });
    });
+});
+
+
+
+
  // Hent DOM Elementer 
 const getBlob = document.getElementsByClassName("blob");
 const getDory = document.getElementsByClassName("dory");

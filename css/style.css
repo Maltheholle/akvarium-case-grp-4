@@ -632,3 +632,7 @@ animation: blink-title ease-in-out 2.6s infinite;
 .paused {
     animation-play-state: paused !important;
 }
+
+.paused {
+    animation-play-state: paused;
+}
