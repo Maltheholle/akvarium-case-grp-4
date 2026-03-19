@@ -243,3 +243,59 @@ animation: blink-title ease-in-out 2.6s infinite;
 
     animation: move-dory-right-and-left 9s ease-in-out infinite ;
 }
+
+
+/* Laver bevægelsen med start og slut punkter til .dory*/
+
+@keyframes move-dory-right-and-left {
+    
+    /* Procenterne viser hvor langt i animations processen vi er, altså ift. tiden animationen varer */
+
+    0% {
+        left: 10%;  
+        /* Left fortæller om at objektet er placeret 10% fra venstre kanten */
+        transform: scaleX(1);
+        /* scaleX spejlvender så fisken kigger mod højre */
+        
+    }
+
+    15% {
+        transform: scaleX(1) translateY(-30px); 
+        /* TranslateY giver fisken et lille hop nedad */
+    }
+
+    30% {
+        transform: scaleX(1) translateY(50px);
+        /* TranslateY giver fisken et lille hop opad */
+    }
+
+    45% {
+        /* sørger for at fisken først vender sig mod slutningen af retningen */
+        transform: scaleX(1); 
+        
+    }
+    50% {
+        left: 70%;
+
+         /*Spejlvender fisken igen, så den svømmer den anden vej igen  */
+        transform: scaleX(-1); 
+    }
+
+    65% {
+        transform: scaleX(-1) translateY(-30px);
+    }
+
+    75% {
+        transform: scaleX(-1) translateY(50px);
+    }
+
+    95% {
+        
+        /* sørger for at fisken først vender sig mod slutningen af retningen */
+        transform: scaleX(-1); 
+    }
+    100% {
+        left: 10%;             /* Er tilbage ved starten */
+        transform: scaleX(1);  /* Vender sig om igen */
+    }
+}
