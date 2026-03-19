@@ -89,3 +89,11 @@ span {
 .back {
     transform: rotateY(180deg);
 }
+/*Flip effekt */
+.selected {
+    transform: rotateY(180deg);
+}
+/*Match effekt */
+.match .front {
+    opacity: 0.0 !important;
+}
