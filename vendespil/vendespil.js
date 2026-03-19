@@ -189,3 +189,22 @@ function startTimer(duration, display) {
     }
   }, 1000);
 }
+
+//Forbedrer brugeroplevelse med lyd//
+window.onload = function () {
+  const oneMinute = 80 * 1;
+  const display = document.querySelector('#time');
+  const boble = document.querySelector('.kallekrabbe-boble');
+  const kallekrabbe = document.querySelector('.kallekrabbe');
+
+  startTimer(oneMinute, display);
+
+  boble.textContent = 'Pas på der ikke går fisk i den!';
+  
+//Tilføjer klikfunktion til Kalle Krabbe//
+  kallekrabbe.addEventListener('click', function () {
+    kallekrabbeLyd.currentTime = 0;
+    kallekrabbeLyd.play();
+    boble.textContent = 'Pas på der ikke går fisk i den!';
+  });
+};
