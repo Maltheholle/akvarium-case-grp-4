@@ -108,3 +108,7 @@ function resetGuesses() {
     card.classList.remove('selected');
   });
 }
+
+//Stopper baggrundsmusik ved game over//
+grid.addEventListener('click', function (event) {
+  const clicked = event.target;
