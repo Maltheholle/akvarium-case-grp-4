@@ -162,6 +162,7 @@ animation: blink-title ease-in-out 2.6s infinite;
     transform: translateX(-50%);
     width: 350px;
     height: auto;
+      cursor: pointer;
     
     animation: move-nemo-right-and-left 10s ease-in-out infinite ;
 
@@ -240,6 +241,7 @@ animation: blink-title ease-in-out 2.6s infinite;
     transform: translateX(-50%);
     width: 400px;
     height: auto;
+      cursor: pointer;
 
     animation: move-dory-right-and-left 9s ease-in-out infinite ;
 }
@@ -314,6 +316,7 @@ animation: blink-title ease-in-out 2.6s infinite;
     z-index: -2;
     width: 250px;
     height: auto;
+      cursor: pointer;
     
     animation: move-palle-around 15s ease-in-out infinite ;
 } 
@@ -389,6 +392,7 @@ animation: blink-title ease-in-out 2.6s infinite;
     transform: translateX(-50%);
     width: 280px;
     height: auto;
+    cursor: pointer;
 
 
  animation: move-blob-left-and-right 13s ease-in-out infinite;
@@ -463,6 +467,7 @@ animation: blink-title ease-in-out 2.6s infinite;
     transform: translateX(-50%);
     width: 270px;
     height: auto;
+    cursor: pointer;
 
 
     animation: make-crab-jump 7s ease-in-out infinite;
