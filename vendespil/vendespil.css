@@ -54,3 +54,10 @@ span {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+/*Opretter kort */
+.card {
+    position: relative;
+    transition: all .4s linear;
+    transform-style: preserve-3d;
+    margin: 5px;
+}
