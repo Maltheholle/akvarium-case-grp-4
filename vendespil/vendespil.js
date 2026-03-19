@@ -190,7 +190,7 @@ function startTimer(duration, display) {
   }, 1000);
 }
 
-//Forbedrer brugeroplevelse med lyd//
+//Forbedrer brugeroplevelse med lyd //
 window.onload = function () {
   const oneMinute = 80 * 1;
   const display = document.querySelector('#time');
