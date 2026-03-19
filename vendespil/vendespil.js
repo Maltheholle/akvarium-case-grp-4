@@ -59,3 +59,9 @@ let delay = 1200;
 let pairsFound = 0;
 let timerInterval;
 let musikStartet = false;
+
+//Opretter grundstruktur for fiske vendespil//
+const game = document.getElementById('game');
+const grid = document.createElement('section');
+grid.setAttribute('class', 'grid');
+game.appendChild(grid);
