@@ -629,20 +629,22 @@ animation: blink-title ease-in-out 2.6s infinite;
 }
 /* EMILIE COMMIT STOPPER HER */
 
-/*Natasja Commit*/
-.paused {
-    animation-play-state: paused !important;
-}
+
 
 .paused {
     animation-play-state: paused;
 }
 
+/*!important er grimt, men det er den nemmeste måde at tvinge fisken væk fra dens gamle placering, når du er i gang med at lære*/
+
 .active-fish {
-    position: fixed;
-    top: 180px;
-    left: 220px;
-    width: 260px;
-    transform: none;
-    z-index: 1000;
+    position: fixed !important;
+    top: 150px !important;
+    left: 930px !important;
+    width: 420px !important;
+    max-width: none !important;
+    height: auto !important;
+    bottom: auto !important;
+    transform: scaleX(-1) !important;
+    z-index: 9999 !important;
 }
