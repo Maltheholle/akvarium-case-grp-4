@@ -81,3 +81,7 @@ span {
     background: url('img/vendespil.png') no-repeat center center;
     background-size: cover;
 }
+/*Hover effekt */
+.front:hover {
+    border: 2px solid rgb(180, 0, 0);
+}
