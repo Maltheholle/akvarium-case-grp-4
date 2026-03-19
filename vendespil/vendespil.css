@@ -104,3 +104,13 @@ span {
     background-repeat: no-repeat;
     background-color: white;
 }
+/*Tilføjer Kalle Krabbe */
+.kallekrabbe {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 375px;
+    animation: sideToSide 3s ease-in-out infinite;
+    cursor: pointer;
+    z-index: 1000;
+}
