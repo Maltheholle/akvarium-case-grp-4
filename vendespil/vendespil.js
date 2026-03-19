@@ -87,3 +87,11 @@ gameGrid.forEach(function (item) {
   card.appendChild(front);
   card.appendChild(back);
 });
+
+//Opretter grundstruktur for fiske vendespil//
+function match() {
+  const selected = document.querySelectorAll('.selected');
+  selected.forEach(function (card) {
+    card.classList.add('match');
+  });
+}
