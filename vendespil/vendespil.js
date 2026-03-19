@@ -109,12 +109,59 @@ function resetGuesses() {
   });
 }
 
-//Stopper baggrundsmusik ved game over//
 grid.addEventListener('click', function (event) {
   const clicked = event.target;
 
-//Starter baggrundsmusik ved første brugerinteraktion//
+  // Starter baggrundsmusik ved første brugerinteraktion
   if (!musikStartet) {
     baggrundsLyd.play();
     musikStartet = true;
   }
+
+  // Tilføjer win condition når alle fiskepar er fundet//
+  if (
+    clicked.nodeName === 'SECTION' ||
+    clicked === previousTarget ||
+    clicked.parentNode.classList.contains('selected') ||
+    clicked.parentNode.classList.contains('match')
+  ) {
+    return;
+  }
+
+  if (count < 2) {
+    count++;
+
+    if (count === 1) {
+      firstGuess = clicked.parentNode.dataset.name;
+      clicked.parentNode.classList.add('selected');
+    } else {
+      secondGuess = clicked.parentNode.dataset.name;
+      clicked.parentNode.classList.add('selected');
+    }
+
+    if (firstGuess && secondGuess) {
+      if (firstGuess === secondGuess) {
+        setTimeout(match, delay);
+        pairsFound++;
+
+        if (pairsFound === 8) {
+          clearInterval(timerInterval);
+          baggrundsLyd.pause();
+          baggrundsLyd.currentTime = 0;
+
+          setTimeout(function () {
+            alert('Mega godt gået! Du har fundet alle fiske-par!');
+            location.reload();
+          }, delay);
+        }
+      }
+
+      setTimeout(resetGuesses, delay);
+    }
+
+    previousTarget = clicked;
+  }
+
+  document.getElementById('pairsFound').textContent = pairsFound;
+});
+
