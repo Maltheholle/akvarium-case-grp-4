@@ -225,3 +225,21 @@ animation: blink-title ease-in-out 2.6s infinite;
         transform: scaleX(1);  /* Vender sig om igen */
     }
 }
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* Dory afsnit ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+.dory {
+    position: absolute;
+    bottom: 550px;
+    z-index: -2;
+    left: 30%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: auto;
+
+    animation: move-dory-right-and-left 9s ease-in-out infinite ;
+}
