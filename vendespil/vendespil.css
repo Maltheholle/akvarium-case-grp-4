@@ -61,3 +61,11 @@ span {
     transform-style: preserve-3d;
     margin: 5px;
 }
+/*Retter størrelse på kort */
+.card,
+.back,
+.front {
+    height: 150px;
+    width: 150px;
+    border-radius: 8px;
+}
