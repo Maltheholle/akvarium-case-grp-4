@@ -49,3 +49,37 @@ const fishInfo = [
          },8000);
       }
    }
+
+// Gennemløber info i array
+   fishInfo.forEach((fish) => {
+      // Finder alle HTML-elementer med den aktuelle bils className
+      document.querySelectorAll("." + fish.className).forEach((elem) => {
+            // Tilføjer mouseover event listener til hvert element
+            elem.addEventListener("click", () => {
+               // Opretter HTML-strengen med bilens detaljer
+               const imageSrc = elem.getAttribute("src");
+
+// !NATASJA COMMIT!//
+const [title, ...rest] = fish.info.split(".");
+const description = rest.join(".");
+
+const fishDetails = `
+    <div class="aquarium-popup">
+        <img src="${imageSrc}" class="popup-fish-img">
+        
+        <div class="blue-bubble">
+            <div class="close-icon" onclick="document.getElementById('tooltip').style.display='none'">×</div>
+            
+            <h2>${title}</h2>
+            <p>${description}</p>
+        </div>
+    </div>
+`;
+// !NATASJA COMMIT STOPPER HER!//
+               // Kalder showTooltip funktionen med bilens detaljer
+               showTooltip(fishDetails);
+               elem.classList.toggle("paused")
+            });
+
+      });
+   });
