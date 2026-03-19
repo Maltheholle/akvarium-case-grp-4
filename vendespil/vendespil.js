@@ -165,3 +165,27 @@ grid.addEventListener('click', function (event) {
   document.getElementById('pairsFound').textContent = pairsFound;
 });
 
+//Tilføjer timer til vendespillet//
+function startTimer(duration, display) {
+  let timer = duration;
+  let minutes;
+  let seconds;
+
+  timerInterval = setInterval(function () {
+    minutes = parseInt(timer / 60, 10);
+    seconds = parseInt(timer % 60, 10);
+
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    display.textContent = minutes + ':' + seconds;
+
+    if (--timer < 0) {
+      clearInterval(timerInterval);
+      baggrundsLyd.pause();
+      baggrundsLyd.currentTime = 0;
+      alert('Godt gået! Du fandt ' + pairsFound + ' fiske-par.');
+      location.reload();
+    }
+  }, 1000);
+}
