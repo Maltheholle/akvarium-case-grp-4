@@ -43,3 +43,14 @@ span {
     color: rgb(0, 0, 0);
     padding-bottom: 10px;
 }
+#pairsFound {
+    margin-right: 30px;
+}
+
+/*Opretter grid til spil */
+.grid {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
