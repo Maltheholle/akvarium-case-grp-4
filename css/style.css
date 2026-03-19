@@ -547,7 +547,7 @@ animation: blink-title ease-in-out 2.6s infinite;
     width: 80vw; /* Gør den bredere så den ligner billedet */
     max-width: 1100px;
     pointer-events: auto;
-    transform: translate(-50%, -50%);
+    transform: translate(-60%, -10%);
 }
 .blue-bubble {
     background-color: #8cd3f5; /* Den lyseblå farve fra dit billede */
@@ -555,7 +555,8 @@ animation: blink-title ease-in-out 2.6s infinite;
     padding: 30px;
     position: relative;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    flex: 1;   
+    flex: none;
+    height: 400px;
 }
 
 /*Natasja Commit*/
