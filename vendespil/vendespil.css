@@ -120,3 +120,11 @@ span {
     50%  { transform: translateX(30px); }
     100% { transform: translateX(0); }
 }
+/*Taleboble styling */
+.kallekrabbe-boble {
+    position: fixed;
+    bottom: 255px;
+    left: 60px;
+
+    max-width: 350px;
+    padding: 20px 35px;
