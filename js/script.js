@@ -22,3 +22,30 @@ const fishInfo = [
       info:"Pudsefisk. Hej, jeg hedder Palle Pudsefisk Jeg bliver ca. 4-6 år gammelJeg lever i Stillehavet og Det Indiske OceanJeg spiser parasitter, dødt hud og små dyr, som sidder på andre fiskJeg bor ved en “rengøringsstation” på koralrevet, hvor andre fisk kommer for at blive gjort rene"
    }
 ];
+
+
+//----------------------------------//
+//ALT NEDEN FOR ER FORSKELLIGE COMMITS FRA EMILIE//
+//----------------------------------//
+
+ // finder tooltip id og gemmer det i en variabel
+   const tooltip = document.getElementById("tooltip");
+
+// Funktion der viser tooltip med biloplysninger
+   // Parameter: html = den tekst indeholdende html-tags som vi vil vise i tooltip'en
+   function showTooltip(html) {
+      // Tjekker om tooltip-elementet eksisterer i DOM'en
+      if (tooltip) {
+         // Indsætter teksten i tooltip'en
+         tooltip.innerHTML = html;
+         // Gør tooltip'en synlig med css klassen
+         tooltip.classList.add("is-visible");
+         tooltip.style.display = "block";
+
+         // Sætter en timer til at skjule tooltip'en efter 8 sekunder
+         setTimeout( function() {
+            // Fjerner css klassen så tooltip'en skjules igen
+            tooltip.classList.remove("is-visible");
+         },8000);
+      }
+   }
