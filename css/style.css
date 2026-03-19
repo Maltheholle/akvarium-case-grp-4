@@ -68,3 +68,12 @@ word-spacing: -6px;
     width: 150px;
     height: auto;
 }
+
+.pink-coral {
+    position: absolute;
+    bottom: 120px;
+    left: 67%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: auto;
+}
