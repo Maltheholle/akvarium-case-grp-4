@@ -236,7 +236,7 @@ animation: blink-title ease-in-out 2.6s infinite;
 .dory {
     position: absolute;
     bottom: 550px;
-    z-index: -2;
+    z-index: 1;
     left: 30%;
     transform: translateX(-50%);
     width: 400px;
@@ -570,7 +570,6 @@ animation: blink-title ease-in-out 2.6s infinite;
 
 .blue-bubble p {
     color: #000;
-    background-color: lightblue;
     font-family: "Cherry bomb one"; /* Eller en lignende "rund" font */
     font-size: 1.6rem;
     font-weight: regular;
@@ -639,12 +638,13 @@ animation: blink-title ease-in-out 2.6s infinite;
 
 .active-fish {
     position: fixed !important;
-    top: 150px !important;
-    left: 930px !important;
+    top: 300px !important;
+    left: 700px !important;
     width: 420px !important;
     max-width: none !important;
     height: auto !important;
     bottom: auto !important;
     transform: scaleX(-1) !important;
     z-index: 9999 !important;
+    
 }
