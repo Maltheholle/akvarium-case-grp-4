@@ -66,8 +66,8 @@ const grid = document.createElement('section');
 grid.setAttribute('class', 'grid');
 game.appendChild(grid);
 
-// Opretter grundstruktur for fiske vendespil//
-// Retter størrelse og visning af billeder på kortene//
+//Opretter grundstruktur for fiske vendespil//
+//Retter størrelse og visning af billeder på kortene//
 gameGrid.forEach(function (item) {
   const name = item.name;
   const img = item.img;
