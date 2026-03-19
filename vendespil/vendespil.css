@@ -128,3 +128,14 @@ span {
 
     max-width: 350px;
     padding: 20px 35px;
+
+    /*Ændret farven af tekst*/
+    background: linear-gradient(to bottom, #bfe9ff, #7fd3ff);
+    color: #EF6921;
+    border: 2px solid #4aa3d8;
+    border-radius: 20px;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 999;
+  
+}
