@@ -119,4 +119,29 @@ document.querySelectorAll(".palle").forEach((elem) => {
    });
 });
 
+function closeTooltip() {
+   if (tooltip) {
+      tooltip.classList.remove("is-visible");
+      tooltip.style.display = "none";
+   }
+
+   if (activeFish) {
+      activeFish.classList.remove("paused");
+      activeFish.classList.remove("active-fish");
+      activeFish = null;
+   }
+
+   // 🔊 STOP ALLE LYDE
+   soundBlob.pause();
+   soundBlob.currentTime = 0;
+
+   soundNemo.pause();
+   soundNemo.currentTime = 0;
+
+   soundDory.pause();
+   soundDory.currentTime = 0;
+
+   soundPalle.pause();
+   soundPalle.currentTime = 0;
+}
 
