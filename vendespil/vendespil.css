@@ -164,8 +164,9 @@ span {
 
 #lukKnap {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 50px;
+  right: 80px;
   font-size: 30px;
+  color: #064970;
   cursor: pointer;
 }
