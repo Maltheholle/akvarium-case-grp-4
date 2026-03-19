@@ -8,3 +8,14 @@ body{
     background-attachment: fixed;
 
 }
+
+
+.title{
+color: #EF6921; 
+-webkit-text-stroke: 0.1rem #ffa51d;
+text-shadow: 1px #FFA51D;
+font-family: 'Cherry Bomb One';
+font-size: 50px;
+text-align: center;
+word-spacing: -6px;
+}
