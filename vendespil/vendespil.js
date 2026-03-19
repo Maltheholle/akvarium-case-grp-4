@@ -112,3 +112,9 @@ function resetGuesses() {
 //Stopper baggrundsmusik ved game over//
 grid.addEventListener('click', function (event) {
   const clicked = event.target;
+
+//Starter baggrundsmusik ved første brugerinteraktion//
+  if (!musikStartet) {
+    baggrundsLyd.play();
+    musikStartet = true;
+  }
