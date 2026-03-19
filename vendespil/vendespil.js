@@ -95,3 +95,16 @@ function match() {
     card.classList.add('match');
   });
 }
+
+//Opretter grundstruktur for fiske vendespil//
+function resetGuesses() {
+  firstGuess = '';
+  secondGuess = '';
+  count = 0;
+  previousTarget = null;
+
+  const selected = document.querySelectorAll('.selected');
+  selected.forEach(function (card) {
+    card.classList.remove('selected');
+  });
+}
