@@ -86,3 +86,12 @@ word-spacing: -6px;
     width: 120px;
     height: auto;
 }
+
+.yellow-coral-2 {
+    position: absolute;
+    bottom: 80px;
+    left: 10%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: auto;
+}
