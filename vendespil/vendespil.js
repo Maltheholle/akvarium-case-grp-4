@@ -45,3 +45,17 @@ const cardsArray = [
     img: 'vendespil/vendespil.img/soestjerne.png'
   }
 ];
+
+// Opretter grundstruktur for fiske vendespil//
+const gameGrid = cardsArray.concat(cardsArray).sort(function () {
+  return 0.5 - Math.random();
+});
+
+let firstGuess = '';
+let secondGuess = '';
+let count = 0;
+let previousTarget = null;
+let delay = 1200;
+let pairsFound = 0;
+let timerInterval;
+let musikStartet = false;
