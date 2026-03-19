@@ -105,3 +105,13 @@ word-spacing: -6px;
     height: auto;
     animation: moveCoral 3s ease-in-out infinite alternate;
 }
+
+.green-seaweed {
+    position: absolute;
+    bottom: 140px;
+    left: 30%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: auto;
+    z-index: -1;
+}
