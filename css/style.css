@@ -20,7 +20,7 @@ text-align: center;
 word-spacing: -6px;
 }
 
-/* Her vil jeg lave en commit */
+
 .skattekiste {
     position: absolute;
     bottom: 20px;
@@ -28,5 +28,16 @@ word-spacing: -6px;
     transform: translateX(-50%);
     width: 330px;
     height: auto;
+
+}
+
+
+.bubbles-chest {
+    position: absolute;
+    bottom:150px;
+    left: 47%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 250px;
 
 }
