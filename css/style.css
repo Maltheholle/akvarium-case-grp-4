@@ -62,6 +62,7 @@ animation: blink-title ease-in-out 2.6s infinite;
     transform: translateX(-50%);
     width: 330px;
     height: auto;
+    cursor: pointer;
 
 }
 
@@ -160,7 +161,7 @@ animation: blink-title ease-in-out 2.6s infinite;
     bottom: 500px;
     left: 70%;
     transform: translateX(-50%);
-    width: 350px;
+    width:150px;
     height: auto;
       cursor: pointer;
     
@@ -239,7 +240,7 @@ animation: blink-title ease-in-out 2.6s infinite;
     z-index: 1;
     left: 30%;
     transform: translateX(-50%);
-    width: 400px;
+    width: 180px;
     height: auto;
       cursor: pointer;
 
@@ -585,6 +586,7 @@ animation: blink-title ease-in-out 2.6s infinite;
     font-size: 30px;
     cursor: pointer;
     color: blue;
+    cursor: pointer;
 }
 
 .blue-bubble,
