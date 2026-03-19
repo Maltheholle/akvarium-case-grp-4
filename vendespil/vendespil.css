@@ -150,3 +150,14 @@ span {
     border-style: solid;
     border-color: #7fd3ff transparent transparent transparent;
 }
+/*Taleboble kant */
+.kallekrabbe-boble::before {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 28px;
+
+    border-width: 12px 12px 0 12px;
+    border-style: solid;
+    border-color: #4aa3d8 transparent transparent transparent;
+}
