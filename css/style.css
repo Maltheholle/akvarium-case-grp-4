@@ -450,3 +450,20 @@ animation: blink-title ease-in-out 2.6s infinite;
     }
 }
 
+
+/* ---------------------------------------------------------------------------- */
+/* Krabbe afsnit ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+
+.krabbe {
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+    transform: translateX(-50%);
+    width: 270px;
+    height: auto;
+
+
+    animation: make-crab-jump 7s ease-in-out infinite;
+}
