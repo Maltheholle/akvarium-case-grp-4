@@ -25,3 +25,14 @@ h1 {
     text-shadow: 1px #FFA51D;
     font-family: 'Cherry Bomb One';
 }
+
+/*Forbedrer layout for wrapper */
+#wrapper {
+    background-color: rgba(255, 230, 168, 0.85);
+    border: 2px #000 solid;
+    width: 700px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
