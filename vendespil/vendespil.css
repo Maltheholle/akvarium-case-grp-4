@@ -114,3 +114,9 @@ span {
     cursor: pointer;
     z-index: 1000;
 }
+/*Animation til Kalle Krabbe */
+@keyframes sideToSide {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(30px); }
+    100% { transform: translateX(0); }
+}
