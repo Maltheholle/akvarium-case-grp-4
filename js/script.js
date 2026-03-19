@@ -89,11 +89,13 @@ const getBlob = document.getElementsByClassName("blob");
 const getDory = document.getElementsByClassName("dory");
 const getNemo = document.getElementsByClassName("nemo");
 const getPalle = document.getElementsByClassName("palle");
+const getKalle = document.getElementsByClassName ("krabbe");
 
 const soundBlob = new Audio("audio/blob.m4a");
 const soundNemo = new Audio("audio/nemo.m4a");
 const soundDory = new Audio("audio/dory.m4a");
 const soundPalle = new Audio("audio/palle.m4a");
+const soundKalle= new Audio ("audio/kalle.m4a");
 
 document.querySelectorAll(".blob").forEach((elem) => {
    elem.addEventListener("click", () => {
@@ -119,6 +121,12 @@ document.querySelectorAll(".palle").forEach((elem) => {
    });
 });
 
+document.querySelectorAll(".krabbe").forEach((elem) => {
+   elem.addEventListener("click", () => {
+      soundKalle.play();
+   });
+});
+
 function closeTooltip() {
    if (tooltip) {
       tooltip.classList.remove("is-visible");
@@ -131,7 +139,7 @@ function closeTooltip() {
       activeFish = null;
    }
 
-   // 🔊 STOP ALLE LYDE
+   // STOP ALLE LYDE
    soundBlob.pause();
    soundBlob.currentTime = 0;
 
@@ -143,5 +151,8 @@ function closeTooltip() {
 
    soundPalle.pause();
    soundPalle.currentTime = 0;
+
+    soundKalle.pause();
+   soundKalle.currentTime = 0;
 }
 
