@@ -376,3 +376,20 @@ animation: blink-title ease-in-out 2.6s infinite;
     }
 }
 
+
+/* ---------------------------------------------------------------------------- */
+/* Blob afsnit ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+
+.blob {
+    position: absolute;
+    bottom: 300px;
+    left: 20%;
+    transform: translateX(-50%);
+    width: 280px;
+    height: auto;
+
+
+ animation: move-blob-left-and-right 13s ease-in-out infinite;
+}
