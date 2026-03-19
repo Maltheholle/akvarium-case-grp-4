@@ -69,3 +69,10 @@ span {
     width: 150px;
     border-radius: 8px;
 }
+/*Retter visning af kort */
+.back,
+.front {
+    position: absolute;
+    backface-visibility: hidden;
+    border: 1.5px solid black;
+}
