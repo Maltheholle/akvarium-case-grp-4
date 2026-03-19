@@ -24,9 +24,6 @@ const fishInfo = [
 ];
 
 
-//----------------------------------//
-//ALT NEDEN FOR ER FORSKELLIGE COMMITS FRA EMILIE//
-//----------------------------------//
 
  // finder tooltip id og gemmer det i en variabel
    const tooltip = document.getElementById("tooltip");
@@ -59,7 +56,7 @@ const fishInfo = [
                // Opretter HTML-strengen med bilens detaljer
                const imageSrc = elem.getAttribute("src");
 
-// !NATASJA COMMIT!//
+
 const [title, ...rest] = fish.info.split(".");
 const description = rest.join(".");
 
@@ -75,7 +72,7 @@ const fishDetails = `
         </div>
     </div>
 `;
-// !NATASJA COMMIT STOPPER HER!//
+
                // Kalder showTooltip funktionen med bilens detaljer
                showTooltip(fishDetails);
                elem.classList.toggle("paused")
