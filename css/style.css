@@ -299,3 +299,23 @@ animation: blink-title ease-in-out 2.6s infinite;
         transform: scaleX(1);  /* Vender sig om igen */
     }
 }
+
+
+/* ---------------------------------------------------------------------------- */
+/* Palle afsnit ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+
+.palle {
+    position: absolute;
+    bottom: 200px;
+    left: 75%;
+    transform: translateX(-50%);
+    z-index: -2;
+    width: 250px;
+    height: auto;
+    
+    animation: move-palle-around 15s ease-in-out infinite ;
+} 
+
+
