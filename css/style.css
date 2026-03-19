@@ -77,3 +77,12 @@ word-spacing: -6px;
     width: 140px;
     height: auto;
 }
+
+.yellow-coral-1 {
+    position: absolute;
+    bottom: 80px;
+    left: 80%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: auto;
+}
