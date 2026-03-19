@@ -95,3 +95,13 @@ word-spacing: -6px;
     width: 150px;
     height: auto;
 }
+
+.moving-coral {
+    position: absolute;
+    bottom: 85px;
+    left: 95%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: auto;
+    animation: moveCoral 3s ease-in-out infinite alternate;
+}
