@@ -76,3 +76,8 @@ span {
     backface-visibility: hidden;
     border: 1.5px solid black;
 }
+/*Forside på kort */
+.front {
+    background: url('img/vendespil.png') no-repeat center center;
+    background-size: cover;
+}
