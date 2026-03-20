@@ -22,7 +22,7 @@ h1 {
 
     /*Tilføjet skygge på tekst*/
     -webkit-text-stroke: 0.1rem #ffa51d;
-    text-shadow: 1px #FFA51D;
+
     font-family: 'Cherry Bomb One';
 }
 

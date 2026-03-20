@@ -19,7 +19,7 @@ const fishInfo = [
    },
    {
       className: "palle",
-      info:"Pudsefisk. Hej, jeg hedder Palle Pudsefisk. Jeg bliver ca. 4-6 år gammel. Jeg lever i Stillehavet og Det Indiske OceanJeg spiser parasitter, dødt hud og små dyr, som sidder på andre fisk. Jeg bor ved en “rengøringsstation” på koralrevet, hvor andre fisk kommer for at blive gjort rene"
+      info:"Pudsefisk. Hej, jeg hedder Palle Pudsefisk. Jeg bliver ca. 4-6 år gammel. Jeg lever i Stillehavet og Det Indiske Ocean. Jeg spiser parasitter, dødt hud og små dyr, som sidder på andre fisk. Jeg bor ved en “rengøringsstation” på koralrevet, hvor andre fisk kommer for at blive gjort rene"
    }
 ];
 

@@ -1,6 +1,4 @@
 
-
-
 body{
     background-image: url("../img/baggrund.png");
     background-size: cover;
@@ -13,7 +11,6 @@ body{
 .title{
 color: #EF6921; 
 -webkit-text-stroke: 0.1rem #ffa51d;
-text-shadow: 1px #FFA51D;
 font-family: 'Cherry Bomb One';
 font-size: 50px;
 text-align: center;
@@ -592,7 +589,7 @@ animation: blink-title ease-in-out 2.6s infinite;
     color: #000;
     font-family: "Cherry bomb one"; 
     font-size: 1.6rem;
-    font-weight: regular;
+    font-weight: lighter;
     line-height: 1.5;
     margin: 0;
     border-radius: 10px; 
@@ -621,7 +618,6 @@ animation: blink-title ease-in-out 2.6s infinite;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   background-color: none;
    color: #fff;
    border-radius: 16px;
    font-size: 40px;
